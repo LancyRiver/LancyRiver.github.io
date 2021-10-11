@@ -172,7 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="How-to-use-hexo-GitHub-to-build-your-own-blog"><a href="#How-to-use-hexo-GitHub-to-build-your-own-blog" class="headerlink" title="How to use hexo + GitHub to build your own blog"></a>How to use hexo + GitHub to build your own blog</h2><h3 id="Reference-link"><a href="#Reference-link" class="headerlink" title="Reference link"></a>Reference link</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://blingblingxuanxuan.github.io/2021/02/16/build-a-blog/</span><br><span class="line">https://zhuanlan.zhihu.com/p/60578464</span><br><span class="line">https://www.cnblogs.com/thanksblog/p/12900165.html</span><br></pre></td></tr></table></figure>
+        <h2 id="How-to-use-hexo-GitHub-to-build-your-own-blog"><a href="#How-to-use-hexo-GitHub-to-build-your-own-blog" class="headerlink" title="How to use hexo + GitHub to build your own blog"></a>How to use hexo + GitHub to build your own blog</h2><h3 id="Reference-link"><a href="#Reference-link" class="headerlink" title="Reference link"></a>Reference link</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://blingblingxuanxuan.github.io/2021/02/16/build-a-blog/</span><br><span class="line">https://zhuanlan.zhihu.com/p/60578464</span><br><span class="line">https://www.cnblogs.com/thanksblog/p/12900165.html</span><br><span class="line">https://www.jianshu.com/p/8d28027fec76?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation</span><br></pre></td></tr></table></figure>
 
 <h3 id="一、How-to-use-Git"><a href="#一、How-to-use-Git" class="headerlink" title="一、How to use Git"></a>一、How to use Git</h3><p>1.Environment construction</p>
 <p>Hexo is based on Node.js. During the construction process, npm (Node.js has been brought) and git need to be used. Therefore, first build the local operating environment and install Node.js and Git.</p>
@@ -182,77 +182,77 @@
 </ul>
 <p>Download Node.js and Git programs and install them. Click “next” to complete the installation according to the default configuration.</p>
 <p>After installation,  use Win + R enters cmd.exe and opens it, and then enters it in turn   node -v、npm -v   and   git –version  and press enter, as shown in the figure below, the program version number can be displayed.</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011192121951.png" alt="image-20211011192121951"></p>
+<p><img src="/2021/10/11/build-blog/1.png" alt="1"></p>
 <h3 id="二、Create-GitHub-repository"><a href="#二、Create-GitHub-repository" class="headerlink" title="二、Create GitHub repository"></a>二、Create GitHub repository</h3><ol>
 <li>After logging into GitHub, click the + sign in the upper right corner of the page and select “new repository”</li>
 </ol>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011192312980.png" alt="image-20211011192312980"></p>
+<p><img src="/2021/10/11/build-blog/2.png" alt="2"></p>
 <ol start="2">
-<li>Create a new repository named your user name. Github.io.</li>
+<li>Create a new repository named your user name. github.io.</li>
 </ol>
 <p>Note what your GitHub user name is, and the user name here must be. Assuming that the user name is blog, the repository name must be blog.github.io.</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011192534517.png" alt="image-20211011192534517"></p>
+<p><img src="/2021/10/11/build-blog/3.png" alt="3"></p>
 <p>After creating a new project on GitHub without submitting any code, a page will prompt us how to deploy quickly. Back up that page here.</p>
 <ol start="3">
 <li>Open  Git Bash</li>
 </ol>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011192655304.png" alt="image-20211011192655304"></p>
+<p><img src="/2021/10/11/build-blog/4.png" alt="4"></p>
 <p>cd~/. ssh#Check the SSH key that already exists on this machine</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011192741722.png" alt="image-20211011192741722"></p>
+<p><img src="/2021/10/11/build-blog/5.png" alt="5"></p>
 <p>If displayed</p>
 <p>No such file or directory #Description the key is not installed.</p>
 <p>Execute the following command</p>
 <p>ssh-keygen -t rsa -C “mailing address”</p>
-<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a>:lancyriver/lancyriver.github.io.git” </p>
+<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a>:lancyriver/lancyriver.github.io.git” </p>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011193044776.png" alt="image-20211011193044776"></p>
+<p><img src="/2021/10/11/build-blog/6.png" alt="6"></p>
 <p>If the words as shown in the figure appear, it indicates that the installation is successful, and then press enter 3 times continuously. If the installation is successful, the key path will be displayed. Find the file according to the path and open the id_rsa.pub file and copy all its contents.</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011195843469.png" alt="image-20211011195843469"></p>
+<p><img src="/2021/10/11/build-blog/7.png" alt="7"></p>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011195945923.png" alt="image-20211011195945923"></p>
+<p><img src="/2021/10/11/build-blog/8.png" alt="8"></p>
 <p>Open GitHub website and click settings, as shown in the figure. Paste the content copied in the previous step to the key position, and enter the title casually.</p>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200114114.png" alt="image-20211011200114114"></p>
+<p><img src="/2021/10/11/build-blog/9.png" alt="9"></p>
 <p>Then copy the ssh address.</p>
 <ol start="4">
 <li>Test whether the connection is successful</li>
 </ol>
 <p>input</p>
-<p>$ ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>$ ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;</a></p>
 <p>Note: the email address does not need to be changed.</p>
 <p>appear: Hi jiangnan1q! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
 <p>Indicates success.</p>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200427496.png" alt="image-20211011200427496"></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200452232.png" alt="image-20211011200452232"></p>
+<p><img src="/2021/10/11/build-blog/10.png" alt="10"></p>
+<p><img src="/2021/10/11/build-blog/11.png" alt="11"></p>
 <p>If you make the following error report:</p>
 <p>fatal: unable to auto-detect email address (got ‘TZtwo@LAPTOP-VAFU1GR0.(none)’)</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200607110.png" alt="image-20211011200607110"></p>
+<p><img src="/2021/10/11/build-blog/12.png" alt="12"></p>
 <p>In fact, if you observe carefully, the solution has been given in the git log：</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200651118.png" alt="。"></p>
+<p><img src="/2021/10/11/build-blog/13.png" alt="13"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;</span><br><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
 
 <p>So just run these two lines of commands in the terminal, and modify them globally.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\TZtwo&gt;git config --global user.name &quot;LancyRiver&quot;</span><br><span class="line">C:\Users\TZtwo&gt;git config --global user.email &quot;XXX@gmail.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011200842009.png" alt="image-20211011200842009"></p>
+<p><img src="/2021/10/11/build-blog/14.png" alt="14"></p>
 <h3 id="三、Installing-hexo"><a href="#三、Installing-hexo" class="headerlink" title="三、Installing hexo"></a>三、Installing hexo</h3><ol>
 <li>Installing npm</li>
 </ol>
 <p>command： npm install -g hexo-cli</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201056276.png" alt="image-20211011201056276"></p>
+<p><img src="/2021/10/11/build-blog/15.png" alt="15"></p>
 <ol start="2">
 <li>In the folder where hexo is installed, create a new folder with any name</li>
 <li>Initialize the folder you just created</li>
 </ol>
 <p>command： hexo init blog</p>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201210846.png" alt="image-20211011201210846"></p>
+<p><img src="/2021/10/11/build-blog/16.png" alt="16"></p>
 <ol start="4">
 <li>Review the new blog folder</li>
 </ol>
 <p>As shown in the figure</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201308669.png" alt="image-20211011201308669"></p>
+<p><img src="/2021/10/11/build-blog/17.png" alt="17"></p>
 <ol start="5">
 <li>configuration file</li>
 </ol>
@@ -261,10 +261,10 @@
 <p>What needs special attention is that there must be a space after the colon, otherwise there may be a problem.</p>
 <p>As shown in the figure</p>
 <p>Before configuration</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201515876.png" alt="image-20211011201515876"></p>
+<p><img src="/2021/10/11/build-blog/18.png" alt="18"></p>
 <p>After configuration</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201541331.png" alt="image-20211011201541331"></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201555479.png" alt="image-20211011201555479"></p>
+<p><img src="/2021/10/11/build-blog/19.png" alt="19"></p>
+<p><img src="/2021/10/11/build-blog/20.png" alt="20"></p>
 <ol start="6">
 <li>Modify theme (this item is not required)</li>
 </ol>
@@ -273,21 +273,22 @@
 <p>$ cd /f/blog/</p>
 <p>$ git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
 <p>Modify profile <strong>_config.yml</strong></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201725492.png" alt="image-20211011201725492"></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201749985.png" alt="image-20211011201749985"></p>
+<p><img src="/2021/10/11/build-blog/21.png" alt="21"></p>
+<p><img src="/2021/10/11/build-blog/22.png" alt="22"></p>
 <p>Change landscape to yilia</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201819512.png" alt="image-20211011201819512"></p>
+<p><img src="/2021/10/11/build-blog/23.png" alt="23"></p>
 <h3 id="四、-Release"><a href="#四、-Release" class="headerlink" title="四、 Release"></a>四、 Release</h3><p>In git, execute the following commands in turn</p>
 <p>$ npm install hexo-deployer-git –save</p>
+<p>$hexo clean</p>
 <p>$hexo g # build</p>
 <p>$hexo s # start service</p>
 <p>$hexo s enables local preview service and browser access   <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a>   You can see the content.</p>
 <p>After configuring all files.</p>
 <p>$hexo D # upload</p>
 <p>In this directory</p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011201954230.png" alt="image-20211011201954230"></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011202025634.png" alt="image-20211011202025634"></p>
-<p><img src="C:\Users\TZtwo\AppData\Roaming\Typora\typora-user-images\image-20211011202047760.png" alt="image-20211011202047760"></p>
+<p><img src="/2021/10/11/build-blog/24.png" alt="24"></p>
+<p><img src="/2021/10/11/build-blog/25.png" alt="25"></p>
+<p><img src="/2021/10/11/build-blog/26.png" alt="26"></p>
 
       
 
